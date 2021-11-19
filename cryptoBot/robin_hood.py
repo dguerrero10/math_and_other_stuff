@@ -18,9 +18,9 @@ class SendEmail():
     def __init__(self):
         self.port = 465
         self.context = ssl.create_default_context()
-        self.sender_email = 'cryptonotifier6969@gmail.com'
+        self.sender_email = 'someEmail@gmail.com'
         self.sender_password = os.environ.get('crypto_bot_pass')
-        self.receiver_email = 'daveabdouguerrero@gmail.com'
+        self.receiver_email = 'myEmail@gmail.com'
         self.message = MIMEMultipart("alternative")
         self.message["Subject"] = "CryptoBot Purchase"
         self.message["From"] = self.sender_email
