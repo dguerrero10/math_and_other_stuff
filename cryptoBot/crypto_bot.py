@@ -13,7 +13,7 @@ class ConnectionHandler:
             self.conn = http.client.HTTPSConnection(self.BASE_ENDPOINT)
             self.headers = {
                             'x-rapidapi-host': "coingecko.p.rapidapi.com",
-                            'x-rapidapi-key': "b3fea2a343msh4d3a7ed26494714p1459c5jsnaa3919fd6504"
+                            'x-rapidapi-key': "API_STRING"
                             }
         except:
             sys.exit(f'Could not establish connection with {self.BASE_ENDPOINT}\n')
